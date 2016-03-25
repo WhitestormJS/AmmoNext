@@ -27,6 +27,13 @@ interface btVector4 {
 };
 btVector4 implements btVector3;
 
+interface btRotationalLimitMotor {
+  void btRotationalLimitMotor();
+  void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
+  boolean isLimited();
+  boolean needApplyTorques();
+};
+
 interface btQuadWord {
   float x();
   float y();
@@ -464,7 +471,8 @@ interface btGeneric6DofConstraint {
   void setAngularLowerLimit([Const, Ref] btVector3 angularLower);
   void setAngularUpperLimit([Const, Ref] btVector3 angularUpper);
   // here
-  // FIX: btTranslationalLimitMotor getRotationalLimitMotor(int index);
+  btRotationalLimitMotor getRotationalLimitMotor(long index);
+  
 };
 btGeneric6DofConstraint implements btTypedConstraint;
 
