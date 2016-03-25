@@ -27,9 +27,15 @@ interface btVector4 {
 };
 btVector4 implements btVector3;
 
+interface btScalar {
+  void btScalar();
+};
+
 interface btRotationalLimitMotor {
   void btRotationalLimitMotor();
   void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
+  [Value] attribute btScalar m_loLimit;
+  attribute boolean m_enableMotor;
   boolean isLimited();
   boolean needApplyTorques();
 };
