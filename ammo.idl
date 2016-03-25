@@ -35,6 +35,7 @@ interface btRotationalLimitMotor {
   void btRotationalLimitMotor();
   void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
   [Value] attribute btScalar m_loLimit;
+  [Value] attribute btScalar m_hiLimit;
   attribute boolean m_enableMotor;
   boolean isLimited();
   boolean needApplyTorques();
