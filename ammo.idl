@@ -28,7 +28,7 @@ interface btVector4 {
 btVector4 implements btVector3;
 
 interface btScalar {
-  void btScalar();
+  float btScalar();
 };
 
 interface btRotationalLimitMotor {
