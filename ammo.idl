@@ -36,6 +36,8 @@ interface btRotationalLimitMotor {
   void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
   [Value] attribute btScalar m_loLimit;
   [Value] attribute btScalar m_hiLimit;
+  [Value] attribute btScalar m_targetVelocity;
+  [Value] attribute btScalar m_maxMotorForce;
   attribute boolean m_enableMotor;
   boolean isLimited();
   boolean needApplyTorques();
@@ -588,6 +590,9 @@ interface btDiscreteDynamicsWorld {
   void addRigidBody(btRigidBody body);
   void addRigidBody(btRigidBody body, short group, short mask);
   void removeRigidBody(btRigidBody body);
+
+  void addVehicle(btActionInterface vehicle);
+  void removeVehicle(btActionInterface vehicle);
 
   void addConstraint(btTypedConstraint constraint, optional boolean disableCollisionsBetweenLinkedBodies);
   void removeConstraint(btTypedConstraint constraint);
