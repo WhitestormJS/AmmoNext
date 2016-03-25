@@ -1,0 +1,529 @@
+AllBulletDemo-Main.o: Main.cpp /usr/include/stdc-predef.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h ../../Extras/glui/GL/glui.h \
+ /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h /usr/include/inttypes.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h /usr/include/GL/glu.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/5.3.0/cstdlib \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++config.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/5.3.0/cstdio /usr/include/c++/5.3.0/cstring \
+ /usr/include/string.h /usr/include/c++/5.3.0/string \
+ /usr/include/c++/5.3.0/bits/stringfwd.h \
+ /usr/include/c++/5.3.0/bits/memoryfwd.h \
+ /usr/include/c++/5.3.0/bits/char_traits.h \
+ /usr/include/c++/5.3.0/bits/stl_algobase.h \
+ /usr/include/c++/5.3.0/bits/functexcept.h \
+ /usr/include/c++/5.3.0/bits/exception_defines.h \
+ /usr/include/c++/5.3.0/bits/cpp_type_traits.h \
+ /usr/include/c++/5.3.0/ext/type_traits.h \
+ /usr/include/c++/5.3.0/ext/numeric_traits.h \
+ /usr/include/c++/5.3.0/bits/stl_pair.h \
+ /usr/include/c++/5.3.0/bits/move.h \
+ /usr/include/c++/5.3.0/bits/concept_check.h \
+ /usr/include/c++/5.3.0/bits/stl_iterator_base_types.h \
+ /usr/include/c++/5.3.0/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/5.3.0/debug/debug.h \
+ /usr/include/c++/5.3.0/bits/stl_iterator.h \
+ /usr/include/c++/5.3.0/bits/ptr_traits.h \
+ /usr/include/c++/5.3.0/bits/predefined_ops.h \
+ /usr/include/c++/5.3.0/bits/postypes.h /usr/include/c++/5.3.0/cwchar \
+ /usr/include/c++/5.3.0/bits/allocator.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/5.3.0/ext/new_allocator.h /usr/include/c++/5.3.0/new \
+ /usr/include/c++/5.3.0/exception \
+ /usr/include/c++/5.3.0/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/5.3.0/bits/localefwd.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/5.3.0/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/5.3.0/iosfwd \
+ /usr/include/c++/5.3.0/cctype /usr/include/ctype.h \
+ /usr/include/c++/5.3.0/bits/ostream_insert.h \
+ /usr/include/c++/5.3.0/bits/cxxabi_forced.h \
+ /usr/include/c++/5.3.0/bits/stl_function.h \
+ /usr/include/c++/5.3.0/backward/binders.h \
+ /usr/include/c++/5.3.0/bits/range_access.h \
+ /usr/include/c++/5.3.0/bits/basic_string.h \
+ /usr/include/c++/5.3.0/ext/atomicity.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/gthr.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/timex.h /usr/include/bits/setjmp.h \
+ /usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/5.3.0/ext/alloc_traits.h \
+ /usr/include/c++/5.3.0/bits/basic_string.tcc \
+ /usr/include/c++/5.3.0/vector \
+ /usr/include/c++/5.3.0/bits/stl_construct.h \
+ /usr/include/c++/5.3.0/bits/stl_uninitialized.h \
+ /usr/include/c++/5.3.0/bits/stl_vector.h \
+ /usr/include/c++/5.3.0/bits/stl_bvector.h \
+ /usr/include/c++/5.3.0/bits/vector.tcc ../../src/LinearMath/btScalar.h \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /usr/include/bits/mathinline.h \
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/float.h \
+ /usr/include/assert.h ../../src/LinearMath/btMinMax.h \
+ ../../src/LinearMath/btScalar.h \
+ ../../src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h \
+ ../../src/BulletDynamics/ConstraintSolver/btTypedConstraint.h \
+ ../../src/BulletDynamics/ConstraintSolver/btSolverConstraint.h \
+ ../../src/LinearMath/btVector3.h ../../src/LinearMath/btMinMax.h \
+ ../../src/LinearMath/btAlignedAllocator.h \
+ ../../src/LinearMath/btMatrix3x3.h ../../src/LinearMath/btVector3.h \
+ ../../src/LinearMath/btQuaternion.h ../../src/LinearMath/btQuadWord.h \
+ ../../src/BulletDynamics/ConstraintSolver/btJacobianEntry.h \
+ ../../src/LinearMath/btAlignedObjectArray.h \
+ ../../src/BulletDynamics/ConstraintSolver/btSolverBody.h \
+ ../../src/LinearMath/btAlignedAllocator.h \
+ ../../src/LinearMath/btTransformUtil.h \
+ ../../src/LinearMath/btTransform.h ../../src/LinearMath/btMatrix3x3.h \
+ ../../src/BulletDynamics/Dynamics/btRigidBody.h \
+ ../../src/LinearMath/btTransform.h \
+ ../../src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../../src/LinearMath/btMotionState.h \
+ ../../src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h \
+ ../../src/BulletDynamics/ConstraintSolver/btSolverBody.h \
+ ../../src/BulletDynamics/ConstraintSolver/btSolverConstraint.h \
+ ../../src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h \
+ ../../src/BulletDynamics/ConstraintSolver/btConstraintSolver.h \
+ ../../Demos/OpenGL/DemoApplication.h ../../Demos/OpenGL/GlutStuff.h \
+ ../../Demos/OpenGL/GL_ShapeDrawer.h \
+ ../../src/BulletCollision/CollisionShapes/btShapeHull.h \
+ ../../src/BulletCollision/CollisionShapes/btConvexShape.h \
+ ../../src/BulletCollision/CollisionShapes/btCollisionShape.h \
+ ../../src/BulletCollision/CollisionShapes/btCollisionMargin.h \
+ ../../src/LinearMath/btQuickprof.h DemoEntries.h \
+ ../../src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h \
+ ../../src/BulletDynamics/Dynamics/btDynamicsWorld.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionWorld.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionObject.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionDispatcher.h \
+ ../../src/BulletCollision/BroadphaseCollision/btDispatcher.h \
+ ../../src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h \
+ ../../src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h \
+ ../../src/BulletCollision/CollisionDispatch/btManifoldResult.h \
+ ../../src/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h \
+ ../../src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h \
+ ../../src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h \
+ ../../src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h \
+ ../../src/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h \
+ ../../src/BulletSoftBody/btSoftRigidDynamicsWorld.h \
+ ../../src/BulletSoftBody/btSoftBody.h \
+ ../../src/LinearMath/btIDebugDraw.h \
+ ../../src/BulletCollision/CollisionShapes/btConcaveShape.h \
+ ../../src/BulletCollision/CollisionShapes/btTriangleCallback.h \
+ ../../src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h \
+ ../../src/BulletSoftBody/btSparseSDF.h \
+ ../../src/BulletCollision/NarrowPhaseCollision/btGjkEpa2.h \
+ ../../src/BulletCollision/BroadphaseCollision/btDbvt.h \
+ ../../src/LinearMath/btAabbUtil2.h /usr/include/memory.h \
+ ../../src/BulletSoftBody/btSoftBodyHelpers.h \
+ ../../Demos/OpenGL/GLDebugDrawer.h
+
+/usr/include/stdc-predef.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stddef.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+../../Extras/glui/GL/glui.h:
+
+/usr/include/GL/glut.h:
+
+/usr/include/GL/freeglut_std.h:
+
+/usr/include/GL/gl.h:
+
+/usr/include/GL/glext.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/GL/glu.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/5.3.0/cstdlib:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/5.3.0/cstdio:
+
+/usr/include/c++/5.3.0/cstring:
+
+/usr/include/string.h:
+
+/usr/include/c++/5.3.0/string:
+
+/usr/include/c++/5.3.0/bits/stringfwd.h:
+
+/usr/include/c++/5.3.0/bits/memoryfwd.h:
+
+/usr/include/c++/5.3.0/bits/char_traits.h:
+
+/usr/include/c++/5.3.0/bits/stl_algobase.h:
+
+/usr/include/c++/5.3.0/bits/functexcept.h:
+
+/usr/include/c++/5.3.0/bits/exception_defines.h:
+
+/usr/include/c++/5.3.0/bits/cpp_type_traits.h:
+
+/usr/include/c++/5.3.0/ext/type_traits.h:
+
+/usr/include/c++/5.3.0/ext/numeric_traits.h:
+
+/usr/include/c++/5.3.0/bits/stl_pair.h:
+
+/usr/include/c++/5.3.0/bits/move.h:
+
+/usr/include/c++/5.3.0/bits/concept_check.h:
+
+/usr/include/c++/5.3.0/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/5.3.0/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/5.3.0/debug/debug.h:
+
+/usr/include/c++/5.3.0/bits/stl_iterator.h:
+
+/usr/include/c++/5.3.0/bits/ptr_traits.h:
+
+/usr/include/c++/5.3.0/bits/predefined_ops.h:
+
+/usr/include/c++/5.3.0/bits/postypes.h:
+
+/usr/include/c++/5.3.0/cwchar:
+
+/usr/include/c++/5.3.0/bits/allocator.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/5.3.0/ext/new_allocator.h:
+
+/usr/include/c++/5.3.0/new:
+
+/usr/include/c++/5.3.0/exception:
+
+/usr/include/c++/5.3.0/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/5.3.0/bits/localefwd.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/5.3.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/5.3.0/iosfwd:
+
+/usr/include/c++/5.3.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/5.3.0/bits/ostream_insert.h:
+
+/usr/include/c++/5.3.0/bits/cxxabi_forced.h:
+
+/usr/include/c++/5.3.0/bits/stl_function.h:
+
+/usr/include/c++/5.3.0/backward/binders.h:
+
+/usr/include/c++/5.3.0/bits/range_access.h:
+
+/usr/include/c++/5.3.0/bits/basic_string.h:
+
+/usr/include/c++/5.3.0/ext/atomicity.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/5.3.0/x86_64-unknown-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/5.3.0/ext/alloc_traits.h:
+
+/usr/include/c++/5.3.0/bits/basic_string.tcc:
+
+/usr/include/c++/5.3.0/vector:
+
+/usr/include/c++/5.3.0/bits/stl_construct.h:
+
+/usr/include/c++/5.3.0/bits/stl_uninitialized.h:
+
+/usr/include/c++/5.3.0/bits/stl_vector.h:
+
+/usr/include/c++/5.3.0/bits/stl_bvector.h:
+
+/usr/include/c++/5.3.0/bits/vector.tcc:
+
+../../src/LinearMath/btScalar.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/include/float.h:
+
+/usr/include/assert.h:
+
+../../src/LinearMath/btMinMax.h:
+
+../../src/LinearMath/btScalar.h:
+
+../../src/BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolver.h:
+
+../../src/BulletDynamics/ConstraintSolver/btTypedConstraint.h:
+
+../../src/BulletDynamics/ConstraintSolver/btSolverConstraint.h:
+
+../../src/LinearMath/btVector3.h:
+
+../../src/LinearMath/btMinMax.h:
+
+../../src/LinearMath/btAlignedAllocator.h:
+
+../../src/LinearMath/btMatrix3x3.h:
+
+../../src/LinearMath/btVector3.h:
+
+../../src/LinearMath/btQuaternion.h:
+
+../../src/LinearMath/btQuadWord.h:
+
+../../src/BulletDynamics/ConstraintSolver/btJacobianEntry.h:
+
+../../src/LinearMath/btAlignedObjectArray.h:
+
+../../src/BulletDynamics/ConstraintSolver/btSolverBody.h:
+
+../../src/LinearMath/btAlignedAllocator.h:
+
+../../src/LinearMath/btTransformUtil.h:
+
+../../src/LinearMath/btTransform.h:
+
+../../src/LinearMath/btMatrix3x3.h:
+
+../../src/BulletDynamics/Dynamics/btRigidBody.h:
+
+../../src/LinearMath/btTransform.h:
+
+../../src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionObject.h:
+
+../../src/LinearMath/btMotionState.h:
+
+../../src/BulletDynamics/ConstraintSolver/btContactSolverInfo.h:
+
+../../src/BulletDynamics/ConstraintSolver/btSolverBody.h:
+
+../../src/BulletDynamics/ConstraintSolver/btSolverConstraint.h:
+
+../../src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h:
+
+../../src/BulletDynamics/ConstraintSolver/btConstraintSolver.h:
+
+../../Demos/OpenGL/DemoApplication.h:
+
+../../Demos/OpenGL/GlutStuff.h:
+
+../../Demos/OpenGL/GL_ShapeDrawer.h:
+
+../../src/BulletCollision/CollisionShapes/btShapeHull.h:
+
+../../src/BulletCollision/CollisionShapes/btConvexShape.h:
+
+../../src/BulletCollision/CollisionShapes/btCollisionShape.h:
+
+../../src/BulletCollision/CollisionShapes/btCollisionMargin.h:
+
+../../src/LinearMath/btQuickprof.h:
+
+DemoEntries.h:
+
+../../src/BulletDynamics/Dynamics/btDiscreteDynamicsWorld.h:
+
+../../src/BulletDynamics/Dynamics/btDynamicsWorld.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionWorld.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionObject.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionDispatcher.h:
+
+../../src/BulletCollision/BroadphaseCollision/btDispatcher.h:
+
+../../src/BulletCollision/NarrowPhaseCollision/btPersistentManifold.h:
+
+../../src/BulletCollision/NarrowPhaseCollision/btManifoldPoint.h:
+
+../../src/BulletCollision/CollisionDispatch/btManifoldResult.h:
+
+../../src/BulletCollision/NarrowPhaseCollision/btDiscreteCollisionDetectorInterface.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h:
+
+../../src/BulletCollision/BroadphaseCollision/btOverlappingPairCache.h:
+
+../../src/BulletCollision/BroadphaseCollision/btBroadphaseInterface.h:
+
+../../src/BulletCollision/BroadphaseCollision/btBroadphaseProxy.h:
+
+../../src/BulletCollision/BroadphaseCollision/btOverlappingPairCallback.h:
+
+../../src/BulletSoftBody/btSoftRigidDynamicsWorld.h:
+
+../../src/BulletSoftBody/btSoftBody.h:
+
+../../src/LinearMath/btIDebugDraw.h:
+
+../../src/BulletCollision/CollisionShapes/btConcaveShape.h:
+
+../../src/BulletCollision/CollisionShapes/btTriangleCallback.h:
+
+../../src/BulletCollision/CollisionDispatch/btCollisionCreateFunc.h:
+
+../../src/BulletSoftBody/btSparseSDF.h:
+
+../../src/BulletCollision/NarrowPhaseCollision/btGjkEpa2.h:
+
+../../src/BulletCollision/BroadphaseCollision/btDbvt.h:
+
+../../src/LinearMath/btAabbUtil2.h:
+
+/usr/include/memory.h:
+
+../../src/BulletSoftBody/btSoftBodyHelpers.h:
+
+../../Demos/OpenGL/GLDebugDrawer.h:

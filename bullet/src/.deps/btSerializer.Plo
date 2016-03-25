@@ -1,0 +1,3 @@
+btSerializer.lo: LinearMath/btSerializer.cpp /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

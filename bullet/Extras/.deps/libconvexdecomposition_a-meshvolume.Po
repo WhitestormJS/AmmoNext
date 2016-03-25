@@ -1,0 +1,9 @@
+libconvexdecomposition_a-meshvolume.o: ConvexDecomposition/meshvolume.cpp \
+ /usr/include/stdc-predef.h ConvexDecomposition/float_math.h \
+ ConvexDecomposition/meshvolume.h
+
+/usr/include/stdc-predef.h:
+
+ConvexDecomposition/float_math.h:
+
+ConvexDecomposition/meshvolume.h:

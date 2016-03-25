@@ -1,0 +1,4 @@
+VehicleDemo-heightfield128x128.o: heightfield128x128.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:
