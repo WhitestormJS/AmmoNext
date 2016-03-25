@@ -27,17 +27,13 @@ interface btVector4 {
 };
 btVector4 implements btVector3;
 
-interface btScalar {
-  float btScalar();
-};
-
 interface btRotationalLimitMotor {
   void btRotationalLimitMotor();
   void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
-  [Value] attribute btScalar m_loLimit;
-  [Value] attribute btScalar m_hiLimit;
-  [Value] attribute btScalar m_targetVelocity;
-  [Value] attribute btScalar m_maxMotorForce;
+  attribute float m_loLimit;
+  attribute float m_hiLimit;
+  attribute float m_targetVelocity;
+  attribute float m_maxMotorForce;
   attribute boolean m_enableMotor;
   boolean isLimited();
   boolean needApplyTorques();
