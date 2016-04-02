@@ -152,4 +152,3 @@ Ammo = AmmoLib();
 
 finally:
   os.chdir(this_dir);
-

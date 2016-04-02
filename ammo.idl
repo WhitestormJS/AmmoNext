@@ -477,7 +477,7 @@ interface btGeneric6DofConstraint {
   void setAngularUpperLimit([Const, Ref] btVector3 angularUpper);
   // here
   btRotationalLimitMotor getRotationalLimitMotor(long index);
-  
+
 };
 btGeneric6DofConstraint implements btTypedConstraint;
 
@@ -518,7 +518,7 @@ interface btHingeConstraint {
   void setLimit(float low, float high, float softness, float biasFactor, optional float relaxationFactor);
   void enableAngularMotor(boolean enableMotor, float targetVelocity, float maxMotorImpulse);
   void setAngularOnly(boolean angularOnly);
-  
+
   void enableMotor(boolean enableMotor);
   void setMaxMotorImpulse(float maxMotorImpulse);
   //void setMotorTarget([Const,Ref] btQuaternion qAinB, float dt);
@@ -629,6 +629,7 @@ interface RaycastInfo {
 };
 
 interface btWheelInfo {
+  [Value] attribute btTransform m_worldTransform;
   attribute float m_suspensionStiffness;
   attribute float m_frictionSlip;
   attribute float m_engineForce;
