@@ -1,15 +1,19 @@
 {
-  "name": "ammo.js",
-  "version": "0.0.2",
+  "name": "whs-ammo",
+  "version": "0.0.4",
   "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten",
   "main": "builds/ammo.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kripken/ammo.js.git"
+    "url": "git://github.com/WhitestormJS/ammo.js.git"
   },
-  "author": "Alon Zakai <alonzakai@gmail.com>",
+  "author": "Alex Buzin <alexbuzin88@gmail.com>",
   "bugs": {
-    "url": "https://github.com/kripken/ammo.js/issues"
+    "url": "https://github.com/WhitestormJS/ammo.js/issues"
   },
-  "homepage": "https://github.com/kripken/ammo.js"
+  "homepage": "https://github.com/WhitestormJS/ammo.js",
+  "dependencies": {
+    "fs": "0.0.2",
+    "path": "^0.12.7"
+  }
 }
