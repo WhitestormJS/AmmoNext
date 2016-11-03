@@ -1,6 +1,6 @@
 {
-  "name": "whs-ammo",
-  "version": "0.0.4",
+  "name": "ammonext",
+  "version": "0.0.1",
   "description": "Direct port of the Bullet physics engine to JavaScript using Emscripten",
   "main": "builds/ammo.js",
   "repository": {

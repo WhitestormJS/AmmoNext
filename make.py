@@ -76,7 +76,7 @@ def stage(text):
 
 try:
   this_dir = os.getcwd()
-  os.chdir('bullet')
+  os.chdir('bullet_old')
   if not os.path.exists('build'):
     os.makedirs('build')
   os.chdir('build')

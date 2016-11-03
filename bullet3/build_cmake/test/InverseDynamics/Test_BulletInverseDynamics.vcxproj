@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B1D8A974-8445-487B-8598-9872C228940B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>Test_BulletInverseDynamics</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Test_BulletInverseDynamics.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Test_BulletInverseDynamics</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Test_BulletInverseDynamics.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Test_BulletInverseDynamics</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Test_BulletInverseDynamics.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Test_BulletInverseDynamics</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Test_BulletInverseDynamics.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Test_BulletInverseDynamics</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_DEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\gtest_Debug.lib;..\..\lib\Debug\BulletDynamics_Debug.lib;..\..\lib\Debug\BulletCollision_Debug.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\gtest_Debug.lib;..\..\lib\Debug\BulletInverseDynamicsUtils_Debug.lib;..\..\lib\Debug\BulletInverseDynamics_Debug.lib;..\..\lib\Debug\Bullet3Common_Debug.lib;..\..\lib\Debug\LinearMath_Debug.lib;..\..\lib\Debug\gtest_Debug.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Debug/Test_BulletInverseDynamics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Debug/Test_BulletInverseDynamics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\Bullet3Common.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\gtest.lib;..\..\lib\Release\BulletDynamics.lib;..\..\lib\Release\BulletCollision.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\Bullet3Common.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\gtest.lib;..\..\lib\Release\BulletInverseDynamicsUtils.lib;..\..\lib\Release\BulletInverseDynamics.lib;..\..\lib\Release\Bullet3Common.lib;..\..\lib\Release\LinearMath.lib;..\..\lib\Release\gtest.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Release/Test_BulletInverseDynamics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Release/Test_BulletInverseDynamics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\BulletInverseDynamicsUtils_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\Bullet3Common_MinsizeRel.lib;..\..\lib\MinSizeRel\LinearMath_MinsizeRel.lib;..\..\lib\MinSizeRel\gtest_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletCollision_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamicsUtils_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\Bullet3Common_MinsizeRel.lib;..\..\lib\MinSizeRel\LinearMath_MinsizeRel.lib;..\..\lib\MinSizeRel\gtest_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamicsUtils_MinsizeRel.lib;..\..\lib\MinSizeRel\BulletInverseDynamics_MinsizeRel.lib;..\..\lib\MinSizeRel\Bullet3Common_MinsizeRel.lib;..\..\lib\MinSizeRel\LinearMath_MinsizeRel.lib;..\..\lib\MinSizeRel\gtest_MinsizeRel.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/MinSizeRel/Test_BulletInverseDynamics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/MinSizeRel/Test_BulletInverseDynamics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4244;4267</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;USE_GRAPHICAL_BENCHMARK;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\.;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\src;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\gtest-1.7.0\include;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\..\..\Extras\InverseDynamics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamicsUtils_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\Bullet3Common_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\gtest_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletCollision_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamicsUtils_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\Bullet3Common_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\gtest_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamicsUtils_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\BulletInverseDynamics_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\Bullet3Common_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\LinearMath_RelWithDebugInfo.lib;..\..\lib\RelWithDebInfo\gtest_RelWithDebugInfo.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/RelWithDebInfo/Test_BulletInverseDynamics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/RelWithDebInfo/Test_BulletInverseDynamics.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\test\InverseDynamics\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/InverseDynamics/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\test\InverseDynamics\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\test\InverseDynamics\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\test\InverseDynamics\test_invdyn_kinematics.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Common/Bullet3Common.vcxproj">
+      <Project>6D6A0063-6677-4EDE-8538-90A7A3EC86E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletCollision/BulletCollision.vcxproj">
+      <Project>2119BFD8-28F6-4673-8369-3A7B96CFCFB5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletDynamics/BulletDynamics.vcxproj">
+      <Project>476683EF-66F4-45FE-91F3-3159ED9203DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletInverseDynamics/BulletInverseDynamics.vcxproj">
+      <Project>A53BA48F-E7EF-4FF4-B8D5-3C8CC500F1CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/InverseDynamics/BulletInverseDynamicsUtils.vcxproj">
+      <Project>9D8B2A0F-27B7-41AB-B505-38AB2FCCED5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/LinearMath/LinearMath.vcxproj">
+      <Project>41EABF95-5D2D-4D00-8DC5-2EC5B537CEBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/ZERO_CHECK.vcxproj">
+      <Project>87D268FD-9954-4F10-A40B-AB1DAF49B479</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/gtest-1.7.0/gtest.vcxproj">
+      <Project>90C7DAEA-7714-4B43-B034-8342E4E0D363</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

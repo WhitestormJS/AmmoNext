@@ -1,0 +1,249 @@
+The system is: Windows - 6.2 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:18 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.29
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/2.8.12.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:20 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.63
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/2.8.12.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec2564978042.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:21 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec2564978042.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2564978042.dir\Debug\".
+  Creating directory "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec2564978042.dir\Debug\cmTryCom.1BB9E0C3.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2564978042.dir\Debug\cmTryCom.1BB9E0C3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2564978042.dir\Debug\\" /Fd"cmTryCompileExec2564978042.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec2564978042.dir\Debug\\" /Fd"cmTryCompileExec2564978042.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2564978042.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2564978042.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2564978042.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2564978042.dir\Debug\testCCompiler.obj
+  cmTryCompileExec2564978042.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2564978042.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec2564978042.dir\Debug\cmTryCom.1BB9E0C3.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec2564978042.dir\Debug\cmTryCom.1BB9E0C3.tlog\cmTryCompileExec2564978042.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec2564978042.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.91
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec833202459.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:22 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec833202459.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec833202459.dir\Debug\".
+  Creating directory "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec833202459.dir\Debug\cmTryCom.D47AAD8B.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec833202459.dir\Debug\cmTryCom.D47AAD8B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec833202459.dir\Debug\\" /Fd"cmTryCompileExec833202459.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec833202459.dir\Debug\\" /Fd"cmTryCompileExec833202459.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec833202459.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec833202459.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec833202459.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec833202459.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec833202459.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec833202459.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec833202459.dir\Debug\cmTryCom.D47AAD8B.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec833202459.dir\Debug\cmTryCom.D47AAD8B.tlog\cmTryCompileExec833202459.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec833202459.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.64
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec3320419523.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:23 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec3320419523.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3320419523.dir\Debug\".
+  Creating directory "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec3320419523.dir\Debug\cmTryCom.0BC87DF9.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3320419523.dir\Debug\cmTryCom.0BC87DF9.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3320419523.dir\Debug\\" /Fd"cmTryCompileExec3320419523.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec3320419523.dir\Debug\\" /Fd"cmTryCompileExec3320419523.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3320419523.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3320419523.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3320419523.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3320419523.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec3320419523.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3320419523.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3320419523.dir\Debug\cmTryCom.0BC87DF9.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec3320419523.dir\Debug\cmTryCom.0BC87DF9.tlog\cmTryCompileExec3320419523.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec3320419523.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.63
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\PROGRA~2\MSBuild\12.0\Bin\MSBuild.exe cmTryCompileExec4269515155.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=12.0
+Microsoft (R) Build Engine version 12.0.31101.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 11/3/2016 3:37:23 PM.
+Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec4269515155.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec4269515155.dir\Debug\".
+  Creating directory "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTryCompileExec4269515155.dir\Debug\cmTryCom.D2FFB05E.tlog\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec4269515155.dir\Debug\cmTryCom.D2FFB05E.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4269515155.dir\Debug\\" /Fd"cmTryCompileExec4269515155.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.31101 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec4269515155.dir\Debug\\" /Fd"cmTryCompileExec4269515155.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4269515155.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4269515155.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec4269515155.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec4269515155.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec4269515155.vcxproj -> C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec4269515155.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec4269515155.dir\Debug\cmTryCom.D2FFB05E.tlog\unsuccessfulbuild".
+  Touching "cmTryCompileExec4269515155.dir\Debug\cmTryCom.D2FFB05E.tlog\cmTryCompileExec4269515155.lastbuildstate".
+Done Building Project "C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\CMakeTmp\cmTryCompileExec4269515155.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.63
+
+

@@ -1,0 +1,7 @@
+# CMake generated Testfile for 
+# Source directory: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/test/collision
+# Build directory: C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/collision
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+ADD_TEST(Test_Collision_PASS "Test_Collision")

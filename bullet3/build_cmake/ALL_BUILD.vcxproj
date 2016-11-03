@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9A5144D4-0944-4AE6-A4BC-3B0EDE2BC4C7}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\BulletConfig.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\BulletConfig.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\BulletConfig.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3 -BC:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake --check-stamp-file C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/CMakeLists.txt;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeVS12FindMake.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystem.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompiler.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\2.8.12.2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindOpenGL.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\BulletConfig.cmake.in;C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\0da7870e40c42f7ae174ba3fc1834be1\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/0da7870e40c42f7ae174ba3fc1834be1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/0da7870e40c42f7ae174ba3fc1834be1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/0da7870e40c42f7ae174ba3fc1834be1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/CMakeFiles/0da7870e40c42f7ae174ba3fc1834be1/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Alex_2\Documents\GitHub\ammo.js\bullet3\build_cmake\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/BasicDemo/AppBasicExampleGui.vcxproj">
+      <Project>DCC1F91E-C920-4C30-8012-9030000A76D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/BasicDemo/App_BasicExample.vcxproj">
+      <Project>17F3A170-06ED-45AC-B11A-743D275F1CF5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/ExampleBrowser/App_ExampleBrowser.vcxproj">
+      <Project>ABFB7EC4-438C-4C3E-BA69-52C623FAF398</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/HelloWorld/App_HelloWorld.vcxproj">
+      <Project>1D019967-C513-4D20-B35F-B965F3A9ADFE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Serialize/Bullet2FileLoader/Bullet2FileLoader.vcxproj">
+      <Project>CCF843B5-78A9-401A-A312-9E34861427B7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Collision/Bullet3Collision.vcxproj">
+      <Project>E8948901-C836-48AB-A55C-75B7F048B467</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Common/Bullet3Common.vcxproj">
+      <Project>6D6A0063-6677-4EDE-8538-90A7A3EC86E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Dynamics/Bullet3Dynamics.vcxproj">
+      <Project>8A8F16A7-A751-4772-952C-D0259650C769</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3Geometry/Bullet3Geometry.vcxproj">
+      <Project>0256EABB-8917-4718-883B-6E74376A2B56</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/Bullet3OpenCL/Bullet3OpenCL_clew.vcxproj">
+      <Project>C400F65D-E9C8-41DF-BBDB-D1FA9AB90FFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletCollision/BulletCollision.vcxproj">
+      <Project>2119BFD8-28F6-4673-8369-3A7B96CFCFB5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletDynamics/BulletDynamics.vcxproj">
+      <Project>476683EF-66F4-45FE-91F3-3159ED9203DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/ExampleBrowser/BulletExampleBrowserLib.vcxproj">
+      <Project>8BD35708-9CAD-42F7-9036-92970A7B3CB3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/Serialize/BulletFileLoader/BulletFileLoader.vcxproj">
+      <Project>924B075B-37E9-4997-B8C9-9BD14FD86C96</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletInverseDynamics/BulletInverseDynamics.vcxproj">
+      <Project>A53BA48F-E7EF-4FF4-B8D5-3C8CC500F1CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/InverseDynamics/BulletInverseDynamicsUtils.vcxproj">
+      <Project>9D8B2A0F-27B7-41AB-B505-38AB2FCCED5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/BulletSoftBody/BulletSoftBody.vcxproj">
+      <Project>A0B342F2-6C9E-4145-B03F-17E9CEA8E787</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/Serialize/BulletWorldImporter/BulletWorldImporter.vcxproj">
+      <Project>D6F14FFB-D211-4059-9D72-D8FE23F9FD1F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/Serialize/BulletXmlWorldImporter/BulletXmlWorldImporter.vcxproj">
+      <Project>8980E623-AB95-4EB2-8192-8EB627EF30FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/ThirdPartyLibs/BussIK/BussIK.vcxproj">
+      <Project>41D7D650-25D4-4086-B7D1-A5841D75CA84</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/ConvexDecomposition/ConvexDecomposition.vcxproj">
+      <Project>37AA2591-8927-48D2-92E8-EBCE608AC1CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/GIMPACTUtils/GIMPACTUtils.vcxproj">
+      <Project>E50014DE-F0CB-4D62-8775-C290B57EE471</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/Extras/HACD/HACD.vcxproj">
+      <Project>F0CC8DCA-84EE-4D20-BDB2-66A2B0446F0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/src/LinearMath/LinearMath.vcxproj">
+      <Project>41EABF95-5D2D-4D00-8DC5-2EC5B537CEBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/OpenGLWindow/OpenGLWindow.vcxproj">
+      <Project>08416400-EA92-41CE-BEEE-94C30EE91314</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/BulletDynamics/pendulum/Test_BulletDynamics.vcxproj">
+      <Project>C140571D-4A82-46EF-8E0E-B4223008B25F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Test_BulletInverseDynamics.vcxproj">
+      <Project>B1D8A974-8445-487B-8598-9872C228940B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Test_BulletInverseDynamicsJacobian.vcxproj">
+      <Project>EC8A1CD1-E6F6-4A75-A1FF-80AF1C17D035</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/InverseDynamics/Test_BulletInverseForwardDynamics.vcxproj">
+      <Project>A050F170-3368-4916-8125-EB27880F6307</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/collision/Test_Collision.vcxproj">
+      <Project>079F1D87-BE1A-422D-81DF-4636D4F166C5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/SharedMemory/Test_PhysicsClientServer.vcxproj">
+      <Project>7EC3C9A0-08B8-4C4C-8CE5-992F23E8BC68</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/ZERO_CHECK.vcxproj">
+      <Project>87D268FD-9954-4F10-A40B-AB1DAF49B479</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/test/gtest-1.7.0/gtest.vcxproj">
+      <Project>90C7DAEA-7714-4B43-B034-8342E4E0D363</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/Alex_2/Documents/GitHub/ammo.js/bullet3/build_cmake/examples/ThirdPartyLibs/Gwen/gwen.vcxproj">
+      <Project>BA7FDE60-94A4-4EB3-B985-0A8BE2E967EC</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
