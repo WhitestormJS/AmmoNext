@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\em++.bat  --target=asmjs-unknown-emscripten  -DNDEBUG -O2  -O2 @CMakeFiles\App_ExampleBrowser.dir\objects1.rsp  -o App_ExampleBrowser.js @CMakeFiles\App_ExampleBrowser.dir\linklibs.rsp

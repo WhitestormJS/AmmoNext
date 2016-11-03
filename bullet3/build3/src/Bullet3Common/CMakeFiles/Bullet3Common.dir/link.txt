@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\emar.bat rc libBullet3Common.a  @CMakeFiles\Bullet3Common.dir\objects1.rsp

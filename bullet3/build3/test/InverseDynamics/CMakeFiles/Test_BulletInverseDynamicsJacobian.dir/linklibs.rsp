@@ -1,0 +1,1 @@
+-lBulletInverseDynamicsUtils ../../src/BulletInverseDynamics/libBulletInverseDynamics.a ../../src/Bullet3Common/libBullet3Common.a ../../src/LinearMath/libLinearMath.a ../gtest-1.7.0/libgtest.a -lpthread 

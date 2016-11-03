@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\em++.bat  --target=asmjs-unknown-emscripten  -DNDEBUG -O2  -O2 @CMakeFiles\App_HelloWorld.dir\objects1.rsp  -o App_HelloWorld.js @CMakeFiles\App_HelloWorld.dir\linklibs.rsp

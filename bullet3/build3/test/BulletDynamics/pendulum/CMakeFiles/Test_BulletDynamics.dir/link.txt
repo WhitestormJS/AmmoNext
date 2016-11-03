@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\em++.bat  --target=asmjs-unknown-emscripten  -DNDEBUG -O2  -O2 @CMakeFiles\Test_BulletDynamics.dir\objects1.rsp  -o Test_BulletDynamics.js @CMakeFiles\Test_BulletDynamics.dir\linklibs.rsp

@@ -425,10 +425,10 @@ interface btRigidBody {
   void setMassProps(float mass, [Const, Ref] btVector3 inertia);
   void setLinearFactor([Const, Ref] btVector3 linearFactor);
   void applyTorque([Const, Ref] btVector3 torque);
-  void applyLocalTorque([Const, Ref] btVector3 torque);
+  // void applyLocalTorque([Const, Ref] btVector3 torque);
   void applyForce([Const, Ref] btVector3 force, [Const, Ref] btVector3 rel_pos);
   void applyCentralForce([Const, Ref] btVector3 force);
-  void applyCentralLocalForce([Const, Ref] btVector3 force);
+  // void applyCentralLocalForce([Const, Ref] btVector3 force);
   void applyTorqueImpulse([Const, Ref] btVector3 torque);
   void applyImpulse([Const, Ref] btVector3 impulse, [Const, Ref] btVector3 rel_pos);
   void applyCentralImpulse([Const, Ref] btVector3 impulse);
@@ -652,9 +652,9 @@ interface btActionInterface {
 };
 
 interface btKinematicCharacterController {
-  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, optional long upAxis);
+  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, [Const,Ref] optional btVector3 up);
 
-  void setUpAxis (long axis);
+  void setUp ([Const,Ref] btVector3 up);
   void setWalkDirection ([Const,Ref] btVector3 walkDirection);
   void setVelocityForTimeInterval ([Const,Ref] btVector3 velocity, float timeInterval);
   //void reset ();
@@ -666,8 +666,8 @@ interface btKinematicCharacterController {
   void setMaxJumpHeight (float maxJumpHeight);
   boolean canJump ();
   void jump ();
-  void setGravity (float gravity);
-  float getGravity ();
+  void setGravity ([Const,Ref] btVector3 gravity);
+  [Value] btVector3 getGravity ();
   void setMaxSlope (float slopeRadians);
   float getMaxSlope ();
   btPairCachingGhostObject getGhostObject ();

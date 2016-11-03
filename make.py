@@ -76,7 +76,7 @@ def stage(text):
 
 try:
   this_dir = os.getcwd()
-  os.chdir('bullet_old')
+  os.chdir('bullet3')
   if not os.path.exists('build'):
     os.makedirs('build')
   os.chdir('build')
@@ -134,7 +134,7 @@ try:
 
   stage('emcc: ' + ' '.join(emcc_args))
 
-  temp = os.path.join('..', '..', 'builds', 'temp.js')
+  temp = os.path.join('..', '..', 'builds', 'ammo.js')
   emscripten.Building.emcc('libbullet.bc', emcc_args + ['--js-transform', 'python %s' % os.path.join('..', '..', 'bundle.py')],
                            temp)
 

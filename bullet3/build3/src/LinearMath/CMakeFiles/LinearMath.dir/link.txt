@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\emar.bat rc libLinearMath.a  @CMakeFiles\LinearMath.dir\objects1.rsp

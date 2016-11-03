@@ -1,0 +1,1 @@
+C:\PROGRA~1\Emscripten\emscripten\tag-1.36.13\em++.bat  --target=asmjs-unknown-emscripten  -DNDEBUG -O2  -O2 @CMakeFiles\Test_Collision.dir\objects1.rsp  -o Test_Collision.js @CMakeFiles\Test_Collision.dir\linklibs.rsp
