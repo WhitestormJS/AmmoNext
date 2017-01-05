@@ -1,4 +1,5 @@
 bullet3/build
 bullet_old/build
+node_modules/
 *.diff
 
