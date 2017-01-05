@@ -1,1 +1,0 @@
-../../src/BulletDynamics/libBulletDynamics.a ../../src/BulletCollision/libBulletCollision.a ../../src/LinearMath/libLinearMath.a ../../src/BulletDynamics/libBulletDynamics.a ../../src/BulletCollision/libBulletCollision.a ../../src/LinearMath/libLinearMath.a ../OpenGLWindow/libOpenGLWindow.a ../../src/Bullet3Common/libBullet3Common.a -lnul -lnul -lX11 -lpthread -ldl -lXext 
