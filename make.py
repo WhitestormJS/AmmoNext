@@ -35,7 +35,7 @@ emcc_args = sys.argv[1:] or '-O3 --llvm-lto 1 -s NO_EXIT_RUNTIME=1 -s AGGRESSIVE
 emcc_args += ['-s', 'TOTAL_MEMORY=%d' % (64*1024*1024)] # default 64MB. Compile with ALLOW_MEMORY_GROWTH if you want a growable heap (slower though).
 #emcc_args += ['-s', 'ALLOW_MEMORY_GROWTH=1'] # resizable heap, with some amount of slowness
 
-emcc_args += '-s EXPORT_NAME="AmmoLib" -s MODULARIZE=1 -s WASM=1'.split(' ')
+emcc_args += '-s EXPORT_NAME="AmmoLib" -s MODULARIZE=1 -s WASM=1'.split(' ') # "C:/Users/Alex_2/Documents/GitHub/binaryen/"
 
 print
 print '--------------------------------------------------'
@@ -134,7 +134,7 @@ try:
 
   stage('emcc: ' + ' '.join(emcc_args))
 
-  temp = os.path.join('..', '..', 'builds', 'ammo.wasm')
+  temp = os.path.join('..', '..', 'builds', 'ammo.js')
   emscripten.Building.emcc('libbullet.bc', emcc_args + ['--js-transform', 'python %s' % os.path.join('..', '..', 'bundle.py')], temp)
 
   assert os.path.exists(temp), 'Failed to create script code'
