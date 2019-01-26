@@ -48,6 +48,18 @@ interface btVector4 {
 };
 btVector4 implements btVector3;
 
+interface btRotationalLimitMotor {
+  void btRotationalLimitMotor();
+  void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
+  attribute float m_loLimit;
+  attribute float m_hiLimit;
+  attribute float m_targetVelocity;
+  attribute float m_maxMotorForce;
+  attribute boolean m_enableMotor;
+  boolean isLimited();
+  boolean needApplyTorques();
+};
+
 interface btQuadWord {
   float x();
   float y();
@@ -64,6 +76,7 @@ interface btQuaternion {
   void setValue(float x, float y, float z, float w);
   void setEulerZYX(float z, float y, float x);
   void setRotation([Ref] btVector3 axis, float angle);
+  void setEuler(float x, float y, float z);
   void normalize();
   float length2();
   float length();
@@ -567,6 +580,7 @@ interface btGeneric6DofConstraint {
   [Const, Ref] btTransform getFrameOffsetA();
   // here
   // FIX: btTranslationalLimitMotor getRotationalLimitMotor(int index);
+  btRotationalLimitMotor getRotationalLimitMotor(long index);
 };
 btGeneric6DofConstraint implements btTypedConstraint;
 
@@ -688,6 +702,8 @@ interface btDiscreteDynamicsWorld {
   void addRigidBody(btRigidBody body, short group, short mask);
   void removeRigidBody(btRigidBody body);
 
+  void addVehicle(btActionInterface vehicle);
+  void removeVehicle(btActionInterface vehicle);
   void addConstraint(btTypedConstraint constraint, optional boolean disableCollisionsBetweenLinkedBodies);
   void removeConstraint(btTypedConstraint constraint);
 
@@ -784,9 +800,9 @@ interface btActionInterface {
 };
 
 interface btKinematicCharacterController {
-  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, optional long upAxis);
+  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, [Const,Ref] optional btVector3 up);
 
-  void setUpAxis (long axis);
+  void setUp ([Const,Ref] btVector3 up);
   void setWalkDirection ([Const,Ref] btVector3 walkDirection);
   void setVelocityForTimeInterval ([Const,Ref] btVector3 velocity, float timeInterval);
   //void reset ();
@@ -800,6 +816,8 @@ interface btKinematicCharacterController {
   void jump ();
   void setGravity (float gravity);
   float getGravity ();
+  void setGravity ([Const,Ref] btVector3 gravity);
+  [Value] btVector3 getGravity ();
   void setMaxSlope (float slopeRadians);
   float getMaxSlope ();
   btPairCachingGhostObject getGhostObject ();
@@ -958,6 +976,8 @@ interface btSoftBody {
 
   [Value] attribute Config m_cfg;
   [Value] attribute tNodeArray m_nodes;
+  [Value] attribute tLinkArray m_links;
+  [Value] attribute tFaceArray m_faces;
   [Value] attribute tMaterialArray m_materials;
   [Value] attribute tAnchorArray m_anchors; 
 
@@ -982,6 +1002,7 @@ interface btSoftBody {
   long generateClusters(long k, optional long maxiterations);
   long generateBendingConstraints(long distance, Material mat);
   btSoftBody upcast(btCollisionObject colObj);
+  btSoftBody upcast([Const] btCollisionObject colObj);
 };
 btSoftBody implements btCollisionObject;
 
