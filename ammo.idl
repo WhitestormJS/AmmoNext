@@ -565,6 +565,8 @@ interface btGeneric6DofConstraint {
   void setAngularLowerLimit([Const, Ref] btVector3 angularLower);
   void setAngularUpperLimit([Const, Ref] btVector3 angularUpper);
   [Const, Ref] btTransform getFrameOffsetA();
+  // here
+  // FIX: btTranslationalLimitMotor getRotationalLimitMotor(int index);
 };
 btGeneric6DofConstraint implements btTypedConstraint;
 
