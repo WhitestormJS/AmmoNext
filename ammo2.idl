@@ -48,18 +48,6 @@ interface btVector4 {
 };
 btVector4 implements btVector3;
 
-interface btRotationalLimitMotor {
-  void btRotationalLimitMotor();
-  void btRotationalLimitMotor([Const, Ref] btRotationalLimitMotor limot);
-  attribute float m_loLimit;
-  attribute float m_hiLimit;
-  attribute float m_targetVelocity;
-  attribute float m_maxMotorForce;
-  attribute boolean m_enableMotor;
-  boolean isLimited();
-  boolean needApplyTorques();
-};
-
 interface btQuadWord {
   float x();
   float y();
@@ -76,7 +64,6 @@ interface btQuaternion {
   void setValue(float x, float y, float z, float w);
   void setEulerZYX(float z, float y, float x);
   void setRotation([Ref] btVector3 axis, float angle);
-  void setEuler(float x, float y, float z);
   void normalize();
   float length2();
   float length();
@@ -512,10 +499,10 @@ interface btRigidBody {
   void setMassProps(float mass, [Const, Ref] btVector3 inertia);
   void setLinearFactor([Const, Ref] btVector3 linearFactor);
   void applyTorque([Const, Ref] btVector3 torque);
-  // void applyLocalTorque([Const, Ref] btVector3 torque);
+  void applyLocalTorque([Const, Ref] btVector3 torque);
   void applyForce([Const, Ref] btVector3 force, [Const, Ref] btVector3 rel_pos);
   void applyCentralForce([Const, Ref] btVector3 force);
-  // void applyCentralLocalForce([Const, Ref] btVector3 force);
+  void applyCentralLocalForce([Const, Ref] btVector3 force);
   void applyTorqueImpulse([Const, Ref] btVector3 torque);
   void applyImpulse([Const, Ref] btVector3 impulse, [Const, Ref] btVector3 rel_pos);
   void applyCentralImpulse([Const, Ref] btVector3 impulse);
@@ -578,9 +565,6 @@ interface btGeneric6DofConstraint {
   void setAngularLowerLimit([Const, Ref] btVector3 angularLower);
   void setAngularUpperLimit([Const, Ref] btVector3 angularUpper);
   [Const, Ref] btTransform getFrameOffsetA();
-  // here
-  // FIX: btTranslationalLimitMotor getRotationalLimitMotor(int index);
-  btRotationalLimitMotor getRotationalLimitMotor(long index);
 };
 btGeneric6DofConstraint implements btTypedConstraint;
 
@@ -702,8 +686,6 @@ interface btDiscreteDynamicsWorld {
   void addRigidBody(btRigidBody body, short group, short mask);
   void removeRigidBody(btRigidBody body);
 
-  void addVehicle(btActionInterface vehicle);
-  void removeVehicle(btActionInterface vehicle);
   void addConstraint(btTypedConstraint constraint, optional boolean disableCollisionsBetweenLinkedBodies);
   void removeConstraint(btTypedConstraint constraint);
 
@@ -800,9 +782,9 @@ interface btActionInterface {
 };
 
 interface btKinematicCharacterController {
-  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, [Const,Ref] optional btVector3 up);
+  void btKinematicCharacterController(btPairCachingGhostObject ghostObject, btConvexShape convexShape, float stepHeight, optional long upAxis);
 
-  void setUp ([Const,Ref] btVector3 up);
+  void setUpAxis (long axis);
   void setWalkDirection ([Const,Ref] btVector3 walkDirection);
   void setVelocityForTimeInterval ([Const,Ref] btVector3 velocity, float timeInterval);
   //void reset ();
@@ -814,9 +796,9 @@ interface btKinematicCharacterController {
   void setMaxJumpHeight (float maxJumpHeight);
   boolean canJump ();
   void jump ();
-  void setGravity ([Const,Ref] btVector3 gravity);
-  [Value] btVector3 getGravity ();
-  void setMaxSlope(float slopeRadians);
+  void setGravity (float gravity);
+  float getGravity ();
+  void setMaxSlope (float slopeRadians);
   float getMaxSlope ();
   btPairCachingGhostObject getGhostObject ();
   void setUseGhostSweepTest (boolean useGhostObjectSweepTest);
@@ -907,29 +889,6 @@ interface tNodeArray {
 };
 
 [Prefix="btSoftBody::"]
-interface Link {
-  [Const] attribute Node[] m_n;
-};
-
-[Prefix="btSoftBody::"]
-interface tLinkArray {
-  [Const] long size();
-  [Const, Ref] Link at(long n);
-};
-
-[Prefix="btSoftBody::"]
-interface Face {
-  [Const] attribute Node[] m_n;
-  [Value] attribute btVector3 m_normal;
-};
-
-[Prefix="btSoftBody::"]
-interface tFaceArray {
-  [Const] long size();
-  [Const, Ref] Face at(long n);
-};
-
-[Prefix="btSoftBody::"]
 interface Material {
   attribute float m_kLST;
   attribute float m_kAST;
@@ -997,8 +956,6 @@ interface btSoftBody {
 
   [Value] attribute Config m_cfg;
   [Value] attribute tNodeArray m_nodes;
-  [Value] attribute tLinkArray m_links;
-  [Value] attribute tFaceArray m_faces;
   [Value] attribute tMaterialArray m_materials;
   [Value] attribute tAnchorArray m_anchors;
 

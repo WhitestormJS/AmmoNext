@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script src="./builds/glue.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      const AmmoLib = Ammo();
+      console.log(AmmoLib);
+      var rayCallback = new AmmoLib.ClosestRayResultCallback(new AmmoLib.btVector3(0, 0, 0), new AmmoLib.btVector3(1, 3, 17));
+      console.log(rayCallback.hasHit());
+
+      // Test setters/getters
+      rayCallback.set_m_collisionObject(AmmoLib.wrapPointer(195));
+      console.log(typeof rayCallback.get_m_collisionObject(), 'object');
+
+      console.log(rayCallback.get_m_rayToWorld().x(), 1);
+      console.log(rayCallback.get_m_rayToWorld().y(), 3);
+      console.log(rayCallback.get_m_rayToWorld().z(), 17);
+    </script>
+  </body>
+</html>

@@ -115,10 +115,10 @@ def build():
 
   try:
     this_dir = os.getcwd()
-    os.chdir('bullet')
-    if not os.path.exists('build'):
-      os.makedirs('build')
-    os.chdir('build')
+    os.chdir('bullet3')
+    if not os.path.exists('build3'):
+      os.makedirs('build3')
+    os.chdir('build3')
 
     stage('Generate bindings')
 
@@ -137,23 +137,27 @@ def build():
     # Configure with CMake on Windows, and with configure on Unix.
     cmake_build = emscripten.WINDOWS
 
-    if cmake_build:
-      if not os.path.exists('CMakeCache.txt'):
-        stage('Configure via CMake')
-        emscripten.Building.configure([emscripten.PYTHON, os.path.join(EMSCRIPTEN_ROOT, 'emcmake'), 'cmake', '..', '-DBUILD_DEMOS=OFF', '-DBUILD_EXTRAS=OFF', '-DBUILD_CPU_DEMOS=OFF', '-DUSE_GLUT=OFF', '-DCMAKE_BUILD_TYPE=Release'])
-    else:
-      if not os.path.exists('config.h'):
-        stage('Configure (if this fails, run autogen.sh in bullet/ first)')
-        emscripten.Building.configure(['../configure', '--disable-demos','--disable-dependency-tracking'])
+    # if cmake_build:
+    #   if not os.path.exists('CMakeCache.txt'):
+    #     stage('Configure via CMake')
+    #     emscripten.Building.configure([emscripten.PYTHON, os.path.join(EMSCRIPTEN_ROOT, 'emcmake'), 'cmake', '..', '-DBUILD_DEMOS=OFF', '-DBUILD_EXTRAS=OFF', '-DBUILD_CPU_DEMOS=OFF', '-DUSE_GLUT=OFF', '-DCMAKE_BUILD_TYPE=Release'])
+    # else:
+    #   if not os.path.exists('config.h'):
+    #     stage('Configure (if this fails, run autogen.sh in bullet3/ first)')
+    #     emscripten.Building.configure(['../configure', '--disable-demos','--disable-dependency-tracking'])
+
+    # emscripten.Building.configure(['./premake4_osx', '--double', '--enable_pybullet', 'gmake'])
 
     stage('Make')
 
     CORES = multiprocessing.cpu_count()
 
-    if emscripten.WINDOWS:
-      emscripten.Building.make(['mingw32-make', '-j', str(CORES)])
-    else:
-      emscripten.Building.make(['make', '-j', str(CORES)])
+    # if emscripten.WINDOWS:
+    #   emscripten.Building.make(['mingw32-make', '-j', str(CORES)])
+    # else:
+    os.chdir('gmake')
+    emscripten.Building.make(['make', '-j', str(CORES)])
+    os.chdir('../')
 
     stage('Link')
 
@@ -167,6 +171,11 @@ def build():
                     os.path.join('src', '.libs', 'libBulletDynamics.a'),
                     os.path.join('src', '.libs', 'libBulletCollision.a'),
                     os.path.join('src', '.libs', 'libLinearMath.a')]
+
+    bullet_libs = [os.path.join('../', 'bin', 'libBulletSoftBody_gmake_x64_release.a'),
+                os.path.join('../', 'bin', 'libBulletDynamics_gmake_x64_release.a'),
+                os.path.join('../', 'bin', 'libBulletCollision_gmake_x64_release.a'),
+                os.path.join('../', 'bin', 'libLinearMath_gmake_x64_release.a')]
 
     emscripten.Building.link(['glue.bc'] + bullet_libs, 'libbullet.bc')
     assert os.path.exists('libbullet.bc')
@@ -192,4 +201,3 @@ def build():
 
 if __name__ == '__main__':
   build()
-
