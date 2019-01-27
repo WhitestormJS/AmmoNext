@@ -117,8 +117,8 @@ def build():
     this_dir = os.getcwd()
     os.chdir('bullet3')
     if not os.path.exists('build3'):
-      os.makedirs('build3')
-    os.chdir('build3')
+      os.makedirs('build')
+    os.chdir('build')
 
     stage('Generate bindings')
 
@@ -138,9 +138,9 @@ def build():
     cmake_build = emscripten.WINDOWS
 
     # if cmake_build:
-    #   if not os.path.exists('CMakeCache.txt'):
-    #     stage('Configure via CMake')
-    #     emscripten.Building.configure([emscripten.PYTHON, os.path.join(EMSCRIPTEN_ROOT, 'emcmake'), 'cmake', '..', '-DBUILD_DEMOS=OFF', '-DBUILD_EXTRAS=OFF', '-DBUILD_CPU_DEMOS=OFF', '-DUSE_GLUT=OFF', '-DCMAKE_BUILD_TYPE=Release'])
+    if not os.path.exists('CMakeCache.txt'):
+      stage('Configure via CMake')
+      emscripten.Building.configure([emscripten.PYTHON, os.path.join(EMSCRIPTEN_ROOT, 'emcmake'), 'cmake', '..', '-DBUILD_DEMOS=OFF', '-DBUILD_EXTRAS=OFF', '-DBUILD_CPU_DEMOS=OFF', '-DUSE_GLUT=OFF', '-DCMAKE_BUILD_TYPE=Release'])
     # else:
     #   if not os.path.exists('config.h'):
     #     stage('Configure (if this fails, run autogen.sh in bullet3/ first)')
@@ -155,27 +155,35 @@ def build():
     # if emscripten.WINDOWS:
     #   emscripten.Building.make(['mingw32-make', '-j', str(CORES)])
     # else:
-    os.chdir('gmake')
+    # os.chdir('../build3/gmake')
     emscripten.Building.make(['make', '-j', str(CORES)])
-    os.chdir('../')
+    # os.chdir('../../build')
 
     stage('Link')
 
-    if cmake_build:
-      bullet_libs = [os.path.join('src', 'BulletSoftBody', 'libBulletSoftBody.a'),
-                    os.path.join('src', 'BulletDynamics', 'libBulletDynamics.a'),
-                    os.path.join('src', 'BulletCollision', 'libBulletCollision.a'),
-                    os.path.join('src', 'LinearMath', 'libLinearMath.a')]
-    else:
-      bullet_libs = [os.path.join('src', '.libs', 'libBulletSoftBody.a'),
-                    os.path.join('src', '.libs', 'libBulletDynamics.a'),
-                    os.path.join('src', '.libs', 'libBulletCollision.a'),
-                    os.path.join('src', '.libs', 'libLinearMath.a')]
+    # if cmake_build:
+    bullet_libs = [os.path.join('src', 'BulletSoftBody', 'libBulletSoftBody.a'),
+                os.path.join('src', 'BulletDynamics', 'libBulletDynamics.a'),
+                os.path.join('src', 'BulletCollision', 'libBulletCollision.a'),
+                os.path.join('src', 'LinearMath', 'libLinearMath.a')]
+    # else:
+    #   bullet_libs = [os.path.join('src', '.libs', 'libBulletSoftBody.a'),
+    #                 os.path.join('src', '.libs', 'libBulletDynamics.a'),
+    #                 os.path.join('src', '.libs', 'libBulletCollision.a'),
+    #                 os.path.join('src', '.libs', 'libLinearMath.a')]
 
-    bullet_libs = [os.path.join('../', 'bin', 'libBulletSoftBody_gmake_x64_release.a'),
-                os.path.join('../', 'bin', 'libBulletDynamics_gmake_x64_release.a'),
-                os.path.join('../', 'bin', 'libBulletCollision_gmake_x64_release.a'),
-                os.path.join('../', 'bin', 'libLinearMath_gmake_x64_release.a')]
+    # bullet_libs = [
+    #             os.path.join('../', 'bin', 'libBulletSoftBody.a'),
+    #             os.path.join('../', 'bin', 'libBullet3Collision.a'),
+    #             os.path.join('../', 'bin', 'libBulletCollision.a'),
+    #             os.path.join('../', 'bin', 'libBullet3Dynamics.a'),
+    #             os.path.join('../', 'bin', 'libBulletInverseDynamics.a'),
+    #             os.path.join('../', 'bin', 'libBulletInverseDynamicsUtils.a'),
+    #             os.path.join('../', 'bin', 'libBulletDynamics.a'),
+    #             os.path.join('../', 'bin', 'libBullet3Geometry.a'),
+    #             os.path.join('../', 'bin', 'libBullet3Common.a'),
+    #             os.path.join('../', 'bin', 'libLinearMath.a'),
+    # ]
 
     emscripten.Building.link(['glue.bc'] + bullet_libs, 'libbullet.bc')
     assert os.path.exists('libbullet.bc')
